@@ -1,0 +1,52 @@
+package AssembleComputer;
+
+public class PC {
+
+    //case
+    //motherboard
+    //monitor
+
+    private Case theCase;
+    private Motherboard motherboard;
+    private Monitors monitor;
+
+
+
+    public PC(Case theCase, Motherboard mb, Monitors monitors){
+        this.theCase = theCase;
+        this.motherboard = mb;
+        this.monitor = monitors;
+    }
+
+    public Case getTheCase() {
+        return theCase;
+    }
+
+    public void setTheCase(Case theCase) {
+        this.theCase = theCase;
+    }
+
+    public Motherboard getMotherboard() {
+        return motherboard;
+    }
+
+    public void setMotherboard(Motherboard motherboard) {
+        this.motherboard = motherboard;
+    }
+
+    public Monitors getMonitor() {
+        return monitor;
+    }
+
+    public void setMonitor(Monitors monitor) {
+        this.monitor = monitor;
+    }
+
+    @Override
+    public String toString(){
+        return "PC Specifications:" + 
+               theCase + 
+               motherboard + 
+               monitor;
+}
+}
